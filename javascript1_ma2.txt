@@ -1,0 +1,27 @@
+//MODULE ASSIGNMENT 2 - LEVEL 1
+
+1. What is a function literal?
+
+A function literal is an expression that defines an anonymous function. A function literal is declared after a variable, and does not require a name (therefore it's referred to as “anonymous”). 
+An anonymous function can be written inside of a function, and therefore access it's parent-function's parameters and variables due to it's scope positioning. 
+
+2. What is the constructor?
+
+The constructor is a way of creating new objects based on another object, which is achieved by using the keyword “new”.  With the keyword “new”, you can construct a new instance of an object/function, but the new instance will have it's own set of properties.  Constructor names should start with a capital letter.  
+
+3. What does the return statement do?
+
+The return statement is used to return a value from a function. The result of the return value can then be added to a new variable. Once the return statement is used, any remaining code written beneath the return statement in a function is stopped and not executed. That is why the function from the next question (question 4) will not log “My name is Andy” in the console. 
+
+4. What will be written to the console from this function:
+		function myFunction(){
+			  return console.log('inside my function');
+			  console.log('My name is Andy');
+		}
+		myFunction();
+
+Answer: inside my function
+
+5. Briefly describe scope in JavaScript.
+
+JavaScript variables are always in a scope, and which scope that is depends on where you put the variable. If a variable is put outside of a function or object it's referred to as a global scope. A function with a global scope can be accessed from anywhere in the script, and can be used in any functions at any time. If a variable is put inside of a function or an object, the variable then gets a local scope. If the variable has a local scope, it can only be accessed from the function or object it is contained in. If a variable is declared locally within a function, you can make a variable with the exact same name in another function, and the functions would still be two completely separate variables that could only be used within its “own” function. 
